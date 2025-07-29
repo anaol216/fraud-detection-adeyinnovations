@@ -1,6 +1,4 @@
-Here is a **well-structured `README.md`** for your fraud detection project:
 
----
 
 # **Fraud Detection for E-Commerce and Banking Transactions**
 
