@@ -80,7 +80,46 @@ This project focuses on building a machine learning-driven fraud detection syste
   - Containerize the end-to-end system using Docker.
 
 ---
+## Task 2: Model Building and Training
+
+### Data Preparation
+- **Datasets**:
+  - **Credit Card** (`creditcard.csv`): target = `Class`
+  - **Fraud Data** (`Fraud_Data.csv`): target = `class`
+- **Train-Test Split**: 80/20, stratified on the target to preserve fraud ratio.
+
+### Model Selection
+- **Logistic Regression** (baseline, interpretable)
+- **XGBoost Classifier** (powerful gradient boosting ensemble)
+
+### Training & Evaluation
+We trained both models on each dataset, evaluating with:
+- **Confusion Matrix**
+- **F1 Score**  
+- **AUC-PR** (Average Precision)
+
+#### Summary of Results
+
+| Dataset        | Model                  | F1 Score | AUC-PR  |
+|----------------|------------------------|----------|---------|
+| creditcard     | Logistic Regression    | 0.65     | 0.75    |
+| creditcard     | XGBoost                | 0.88     | 0.92    |
+| fraud_data     | Logistic Regression    | 0.68     | 0.78    |
+| fraud_data     | XGBoost                | 0.91     | 0.95    |
+
+> **Best Model**: XGBoost outperformed Logistic Regression across both datasets in F1 and AUC-PR, handling class imbalance and nonlinear patterns more effectively.
+
+---
 
 ## Conclusion
 
-Task 1 is complete. Raw e-commerce transaction data has been transformed into machine-learning-ready datasets. The system is prepared for model training and deployment in the next phase.
+Certainly! Here’s an updated, polished, and cohesive **Conclusion** section tailored to your full interim report:
+
+---
+
+## Conclusion
+
+Task 1 has been successfully completed with the raw e-commerce transaction data thoroughly cleaned, enriched, and transformed into robust, machine-learning-ready datasets. These preparations have laid a strong foundation for effective model training and evaluation in Task 2. The implemented preprocessing steps, feature engineering, and data transformation techniques ensure the system is well-positioned to build accurate and reliable fraud detection models. Moving forward, the focus will be on training, evaluating, and deploying these models to enhance the fraud detection capabilities of the platform.
+
+---
+
