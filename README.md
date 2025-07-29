@@ -1,5 +1,4 @@
 
-
 # **Fraud Detection for E-Commerce and Banking Transactions**
 
 This project develops a complete **end-to-end fraud detection pipeline** for e-commerce and bank transactions. It includes **data preprocessing, exploratory data analysis (EDA), machine learning model building, and model explainability using SHAP**.
